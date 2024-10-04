@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>CPS</title>
 </head>
 <body>
     <header>
@@ -14,8 +14,11 @@
                 <img class="img-logo" src="assets/Group.svg" alt="logo CPS">
             </div>
             <div class="header__nav_right">
-                <button class="repair"><img src="assets/repair.svg" alt="оставить заявку"></button>
-                <button class="checkstatus"><img src="assets/checkstatus.svg" alt="статус ремонта"></button>
+                <button class="call"><img src="assets/call.svg" alt="позвонить"></button>
+                <button class="chat"><img src="assets/chat.svg" alt="чат"></button>
+                <button class="profile"><img src="assets/profile.svg" alt="профиль"></button>
+                <button class="repair"><span class="repair__text">Оставить заявку</span><img src="assets/repair.svg" alt="оставить заявку"></button>
+                <button class="checkstatus"><span class="checkstatus__text">Статус ремонта</span><img src="assets/checkstatus.svg" alt="статус ремонта"></button>
             </div>
         </nav>
     </header>
@@ -24,24 +27,27 @@
         <section class="services">
             <h1 class="services__title">Услуги и сервисы</h1>
             <nav>
-                <ul class="services__top-nav">
+                <ul class="services__nav">
                     <li><button class="services__button services__button_active">Ремонтируемые устройства</button></li>
+                    <li><button class="services__button">Ремонтируемые бренды</button></li>
                     <li><button class="services__button">Дополнительные услуги</button></li>
                     <li><button class="services__button">Цены на услуги</button></li>
                     <li><button class="services__button">Специальные цены</button></li>
                     <li><button class="services__button">Отзывы</button></li>
+                    <li><button class="services__button">Адреса сервисных центров</button></li>
                 </ul>
             </nav>
             <div class="content">
-                <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                <p class="content__text">
+                    <input id="checkbox" type="checkbox" name="text-more" class="checkbox_text-more">
+                    <span class="content__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.<br><br>
+                    Основное направление – гарантийный и негарантийный ремонт компьютерной и бытовой техники.<br><br>
+                    Мы сотрудничаем с торговыми сетями, корпоративными клиентами, государственными организациями и частными лицами. Услугами CPS пользуются в России, странах СНГ и на международном рынке. Обслуживаем технику Lenovo, Maibenben, ASUS, Motorola, Redmond, Kitfort, Philips, AOC, Kodak и др.<br><br>
+                    У нас команда квалифицированных специалистов. Многие из них работают со дня основания компании.<br><br>
+                    Мы любим технику и делаем всё, чтобы она работала так, как вам нужно.</span>
+                    <label for="checkbox" class="checkbox__label"><span class="custom-checkbox_text-more">Читать далее</span><span class="custom-checkbox_text-less">Скрыть</span></label>
                 </p>
-                <label class="checkbox__label">
-                    <input type="checkbox" name="text-more" class="checkbox_text-more">
-                    <span class="custom-checkbox_text-more"></span>
-                    <span class="checkbox__label-text">Читать далее</span>
-                </label>
-                <!-- <button class="content__text-more"><img src="assets/expand.svg" alt="читать далее">Читать далее</button> -->
                 <img src="assets/CPS_logo_photo.jpg" alt="логотип CPS" class="CPS-logo-photo">
             </div>
         </section>
