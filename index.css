@@ -40,7 +40,7 @@ header {
     height: 88px;
     padding: 0 16px;
     border-bottom: 1px solid #D9FFF5;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 .header__nav {
@@ -71,6 +71,34 @@ header {
     width: 2px;
     height: 32px;
     border-radius: 1px;
+}
+
+.menu,
+.call,
+.chat,
+.profile {
+    background-color: #FF3E79;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.repair::after, 
+.checkstatus::after {
+    content: "";
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+}
+
+.repair::after {
+background: url("assets/repair.svg");
+}
+
+.checkstatus::after {
+background: url("assets/checkstatus.svg");
 }
 
 .call,
@@ -239,20 +267,29 @@ header {
         display: inline-block;
     }
 
-    .header__nav_left::after {
-        display: none;
+    .header__nav_left {
+        gap: 42px;
     }
-    
-    .menu::after,
-    .profile::after {
+
+    .header__nav_left::after {
+        position: relative;
+        right: 160px;
+        width: 3px;
+    }
+
+    .header__nav_right::before {
         content: "";
         display: inline-block;
         background-color: #EAEAEA;
         width: 2px;
         height: 32px;
         border-radius: 1px;
-        margin-left: 20px;
-        margin-right: 3px;
+        position: relative;
+        left: 194px;
+    }
+
+    .profile {
+        margin-right: 26px;
     }
 
     .services__title::before {
