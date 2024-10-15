@@ -7,7 +7,7 @@
     <title>CPS</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="header__nav">
             <div class="header__nav_left">
                 <button class="menu"><img src="assets/burger.svg" alt="кнопка меню"></button>
@@ -22,7 +22,48 @@
             </div>
         </nav>
     </header>
+    <aside class="mobile-menu">
+        <div class="mobile-menu--top">
+            <header>
+                <nav class="mobile-menu__header-nav">
+                    <button class="menu"><img src="assets/cross.svg" alt="кнопка меню"></button>
+                    <img class="img-logo" src="assets/logo.svg" alt="logo CPS">
+                    <button class="search"><img src="assets/search.svg" alt="кнопка поиск"></button>
+                </nav>
+            </header>
 
+            <main>
+                <ul class="mobile-menu__main">
+                    <li><a class="mobile-menu__main--active">Ремонт техники</a></li>
+                    <li><a>Услуги и сервисы</a></li>
+                    <li><a>Корпоративным клиентам</a></li>
+                    <li><a>Продавцам техники</a></li>
+                    <li><a>Партнерам</a></li>
+                    <li><a>Производителям</a></li>
+                    <li><a>Наши сервисные центры</a></li>
+                    <li><a>Контакты</a></li>
+                </ul>
+            </main>
+        </div>
+        <div class="mobile-menu--bottom">
+            <footer>
+                <section class="footer__contacts">
+                    <div class="footer__buttons">
+                        <button class="call"><img src="assets/call.svg" alt="позвонить"></button>
+                        <button class="chat"><img src="assets/chat.svg" alt="чат"></button>
+                        <button class="profile"><img src="assets/profile.svg" alt="профиль"></button>
+                    </div>
+                    <a class="footer__email">mail@cps.com</a>
+                    <a class="footer__tel">8 800 890 8900</a>
+                </section>
+                <div class="footer__lang">
+                    <a class="footer__ru lang--active">ru</a>
+                    <a class="footer__en">en</a>
+                    <a class="footer__ch">ch</a>
+                </div>
+            </footer>
+        </div>
+    </aside>
     <main>
         <section class="services">
             <h1 class="services__title">Услуги и сервисы</h1>

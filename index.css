@@ -34,7 +34,9 @@ body {
     background-color: #F8F8F8;
 }
 
-header {
+.header {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     height: 88px;
@@ -76,12 +78,30 @@ header {
 .menu,
 .call,
 .chat,
-.profile {
+.profile,
+.search {
     background-color: #FF3E79;
     border-radius: 50%;
     padding: 10px;
     width: 40px;
     height: 40px;
+}
+
+.menu:hover,
+.call:hover,
+.chat:hover,
+.profile:hover,
+.search:hover {
+    transition: 0.1s;
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.repair:hover::after,
+.checkstatus:hover::after {
+    transition: 0.1s;
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .repair::after, 
@@ -196,7 +216,7 @@ background: url("assets/checkstatus.svg");
     overflow: hidden;
 }
 
-/*               чекбокс, кастомный чекбокс, читать далее-скрыть          */
+/*кастомный чекбокс, читать далее-скрыть*/
 .checkbox_text-more {
     position: absolute;
     z-index: -1;
@@ -331,7 +351,7 @@ background: url("assets/checkstatus.svg");
 
 
 @media screen and (min-width: 1120px) {
-    header {
+    .header {
        visibility: hidden;
     }
 
@@ -393,4 +413,134 @@ background: url("assets/checkstatus.svg");
     .CPS-logo-photo {
         margin-top: 7px;
     }
+}
+
+.mobile-menu {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    
+    background-color: #fff;
+    box-shadow: 5px 0 20px 0 #0E185033;
+}
+
+.mobile-menu--top,
+.mobile-menu--bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu--bottom {
+    margin-bottom: 32px;
+}
+
+
+.mobile-menu__header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
+
+    width: 272px;
+    padding: 19px 24px;
+}
+
+.search {
+    margin-left: 61px;
+}
+
+.mobile-menu__main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;    
+}
+
+.mobile-menu__main a {
+    display: block;
+    padding: 4px 24px;
+    font-weight: 600;
+}
+
+.mobile-menu__main--active {
+    color: #7E7E82;
+}
+
+.mobile-menu__main--active::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateX(-24px);
+    width: 4px;
+    height: 32px;
+
+    background-color: #41F6D7;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.mobile-menu__main li:hover {
+    background-color: rgba(107, 123, 132, 0.1);
+    cursor: pointer;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    padding: 0 24px;
+    
+}
+
+.footer__buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__email {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer__tel {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    cursor: pointer;
+}
+
+.footer__lang {
+    display: flex;
+    gap: 7px;
+    margin-top: 40px;
+    padding: 0 24px;
+    
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.lang--active {
+    color: #7E7E82;
 }
