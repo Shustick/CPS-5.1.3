@@ -75,10 +75,35 @@ body {
     border-radius: 1px;
 }
 
-.menu,
+.burger {
+    background: url("assets/burger.svg") no-repeat 50% 50%;
+}
+
+.call {
+    background: url("assets/call.svg") no-repeat 50% 50%;
+}
+
+.chat {
+    background: url("assets/chat.svg") no-repeat 50% 50%;
+}
+
+.profile {
+    background: url("assets/profile.svg") no-repeat 50% 50%;
+}
+
+.cross {
+    background: url("assets/cross.svg") no-repeat 50% 50%;
+}
+
+.search {
+    background: url("assets/search.svg") no-repeat 50% 50%;
+}
+
+.burger,
 .call,
 .chat,
 .profile,
+.cross,
 .search {
     background-color: #FF3E79;
     border-radius: 50%;
@@ -87,10 +112,12 @@ body {
     height: 40px;
 }
 
-.menu:hover,
+
+.burger:hover,
 .call:hover,
 .chat:hover,
 .profile:hover,
+.cross:hover,
 .search:hover {
     transition: 0.1s;
     transform: scale(1.2);
@@ -515,7 +542,11 @@ background: url("assets/checkstatus.svg");
 .footer__email {
     margin-top: 16px;
     margin-bottom: 12px;
-    cursor: pointer;
+    
+    color: #1B1C21;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    text-decoration: none;
 }
 
 .footer__tel {
@@ -523,7 +554,8 @@ background: url("assets/checkstatus.svg");
     font-weight: 800;
     line-height: 32px;
     letter-spacing: -0.6px;
-    cursor: pointer;
+    color: #1B1C21;
+    text-decoration: none;
 }
 
 .footer__lang {
