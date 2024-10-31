@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>CPS</title>
 </head>
 <body>
@@ -78,10 +80,10 @@
                     <li><button class="services__button">Адреса сервисных центров</button></li>
                 </ul>
             </nav>
-            <div class="content">
-                <p class="content__text">
+            <section class="services__content">
+                <p class="services__text">
                     <input id="checkbox" type="checkbox" name="text-more" class="checkbox_text-more">
-                    <span class="content__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
+                    <span class="services__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
                     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.<br><br>
                     Основное направление – гарантийный и негарантийный ремонт компьютерной и бытовой техники.<br><br>
                     Мы сотрудничаем с торговыми сетями, корпоративными клиентами, государственными организациями и частными лицами. Услугами CPS пользуются в России, странах СНГ и на международном рынке. Обслуживаем технику Lenovo, Maibenben, ASUS, Motorola, Redmond, Kitfort, Philips, AOC, Kodak и др.<br><br>
@@ -90,9 +92,95 @@
                     <label for="checkbox" class="checkbox__label"><span class="custom-checkbox_text-more">Читать далее</span><span class="custom-checkbox_text-less">Скрыть</span></label>
                 </p>
                 <img src="assets/CPS_logo_photo.jpg" alt="логотип CPS" class="CPS-logo-photo">
-            </div>
+            </section>
+            <section class="services__brandsRepair">
+                <div class="services__brandsRepair-header">
+                    <h2 class="services__brandsRepair-title">Ремонт техники различных брендов</h2>
+                </div>
+                    <!-- слайдер: -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <input id="swiper__checkbox" type="checkbox" name="show-all" class="swiper__checkbox">
+                        <label for="swiper__checkbox" class="swiper__show-all-label">
+                            <span class="swiper__show-all">Показать все</span>
+                            <span class="swiper__hide">Скрыть</span>
+                        </label>
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/lenovo.svg" alt="логотип lenovo" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/samsung.svg" alt="логотип samsung" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/apple.svg" alt="логотип apple" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/viewSonic.svg" alt="логотип viewSonic" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/bosch.svg" alt="логотип bosch" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/hp.svg" alt="логотип hp" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/acer.svg" alt="логотип acer" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/sony.svg" alt="логотип sony" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/asus.svg" alt="логотип asus" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/philips.svg" alt="логотип philips" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__brand">
+                                <img src="assets/brands/xiaomi.svg" alt="логотип xiaomi" class="swiper__img">
+                                <button class="swiper__about-brand"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </section>
     </main>
-
+<script src="script.js"></script>
+<script src="swiper.js"></script>
 </body>
 </html>
